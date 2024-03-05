@@ -1,0 +1,245 @@
+index,pathway
+0,Acute myeloid leukemia
+1,Adherens junction
+2,Adipocytokine signaling pathway
+3,Adrenergic signaling in cardiomyocytes
+4,African trypanosomiasis
+5,"Alanine, aspartate and glutamate metabolism"
+6,Alcoholism
+7,Aldosterone-regulated sodium reabsorption
+8,Allograft rejection
+9,alpha-Linolenic acid metabolism
+10,Alzheimer's disease
+11,Aminoacyl-tRNA biosynthesis
+12,Amino sugar and nucleotide sugar metabolism
+13,Amoebiasis
+14,Amphetamine addiction
+15,AMPK signaling pathway
+16,Amyotrophic lateral sclerosis (ALS)
+17,Antigen processing and presentation
+18,Apoptosis
+19,Arachidonic acid metabolism
+20,Arginine and proline metabolism
+21,Arrhythmogenic right ventricular cardiomyopathy (ARVC)
+22,Ascorbate and aldarate metabolism
+23,Asthma
+24,Autoimmune thyroid disease
+25,Axon guidance
+26,Bacterial invasion of epithelial cells
+27,Basal cell carcinoma
+28,B cell receptor signaling pathway
+29,beta-Alanine metabolism
+30,Bile secretion
+31,Biotin metabolism
+32,Bladder cancer
+33,Butanoate metabolism
+34,Caffeine metabolism
+35,Calcium signaling pathway
+36,cAMP signaling pathway
+37,Carbohydrate digestion and absorption
+38,Cardiac muscle contraction
+39,Cell adhesion molecules (CAMs)
+40,Cell cycle
+41,cGMP-PKG signaling pathway
+42,Chagas disease (American trypanosomiasis)
+43,Chemical carcinogenesis
+44,Chemokine signaling pathway
+45,Choline metabolism in cancer
+46,Cholinergic synapse
+47,Chronic myeloid leukemia
+48,Circadian entrainment
+49,Circadian rhythm
+50,Citrate cycle (TCA cycle)
+51,Cocaine addiction
+52,Colorectal cancer
+53,Complement and coagulation cascades
+54,Cysteine and methionine metabolism
+55,Cytokine-cytokine receptor interaction
+56,Cytosolic DNA-sensing pathway
+57,D-Glutamine and D-glutamate metabolism
+58,Dilated cardiomyopathy
+59,Dopaminergic synapse
+60,Dorso-ventral axis formation
+61,Drug metabolism - cytochrome P450
+62,Drug metabolism - other enzymes
+63,ECM-receptor interaction
+64,Endocrine and other factor-regulated calcium reabsorption
+65,Endometrial cancer
+66,Epithelial cell signaling in Helicobacter pylori infection
+67,Epstein-Barr virus infection
+68,ErbB signaling pathway
+69,Estrogen signaling pathway
+70,Ether lipid metabolism
+71,Fat digestion and absorption
+72,Fatty acid biosynthesis
+73,Fatty acid degradation
+74,Fatty acid elongation
+75,Fc epsilon RI signaling pathway
+76,Fc gamma R-mediated phagocytosis
+77,Focal adhesion
+78,Folate biosynthesis
+79,FoxO signaling pathway
+80,Fructose and mannose metabolism
+81,GABAergic synapse
+82,Galactose metabolism
+83,Gap junction
+84,Gastric acid secretion
+85,Glioma
+86,Glucagon signaling pathway
+87,Glutamatergic synapse
+88,Glutathione metabolism
+89,Glycerolipid metabolism
+90,Glycerophospholipid metabolism
+91,"Glycine, serine and threonine metabolism"
+92,Glycolysis / Gluconeogenesis
+93,Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate
+94,Glycosaminoglycan biosynthesis - heparan sulfate / heparin
+95,Glycosaminoglycan degradation
+96,Glycosphingolipid biosynthesis - ganglio series
+97,Glycosphingolipid biosynthesis - globo series
+98,Glycosphingolipid biosynthesis - lacto and neolacto series
+99,Glycosylphosphatidylinositol(GPI)-anchor biosynthesis
+100,Glyoxylate and dicarboxylate metabolism
+101,GnRH signaling pathway
+102,Graft-versus-host disease
+103,Hedgehog signaling pathway
+104,Hepatitis B
+105,Hepatitis C
+106,Herpes simplex infection
+107,HIF-1 signaling pathway
+108,Hippo signaling pathway
+109,Histidine metabolism
+110,HTLV-I infection
+111,Huntington's disease
+112,Hypertrophic cardiomyopathy (HCM)
+113,Inflammatory bowel disease (IBD)
+114,Inflammatory mediator regulation of TRP channels
+115,Influenza A
+116,Inositol phosphate metabolism
+117,Insulin secretion
+118,Insulin signaling pathway
+119,Intestinal immune network for IgA production
+120,Jak-STAT signaling pathway
+121,Legionellosis
+122,Leishmaniasis
+123,Leukocyte transendothelial migration
+124,Linoleic acid metabolism
+125,Lipoic acid metabolism
+126,Long-term depression
+127,Long-term potentiation
+128,Lysine biosynthesis
+129,Lysine degradation
+130,Malaria
+131,MAPK signaling pathway
+132,Maturity onset diabetes of the young
+133,Measles
+134,Melanogenesis
+135,Melanoma
+136,Metabolism of xenobiotics by cytochrome P450
+137,MicroRNAs in cancer
+138,Mineral absorption
+139,Morphine addiction
+140,mTOR signaling pathway
+141,Mucin type O-Glycan biosynthesis
+142,Natural killer cell mediated cytotoxicity
+143,Neuroactive ligand-receptor interaction
+144,Neurotrophin signaling pathway
+145,NF-kappa B signaling pathway
+146,N-Glycan biosynthesis
+147,Nicotinate and nicotinamide metabolism
+148,Nitrogen metabolism
+149,NOD-like receptor signaling pathway
+150,Non-alcoholic fatty liver disease (NAFLD)
+151,Non-small cell lung cancer
+152,Notch signaling pathway
+153,Olfactory transduction
+154,One carbon pool by folate
+155,Oocyte meiosis
+156,Osteoclast differentiation
+157,Ovarian steroidogenesis
+158,Oxidative phosphorylation
+159,Oxytocin signaling pathway
+160,p53 signaling pathway
+161,Pancreatic cancer
+162,Pancreatic secretion
+163,Pantothenate and CoA biosynthesis
+164,Parkinson's disease
+165,Pathogenic Escherichia coli infection
+166,Pathways in cancer
+167,Pentose and glucuronate interconversions
+168,Pentose phosphate pathway
+169,Pertussis
+170,Phenylalanine metabolism
+171,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+172,Phosphatidylinositol signaling system
+173,Phototransduction
+174,PI3K-Akt signaling pathway
+175,Platelet activation
+176,Porphyrin and chlorophyll metabolism
+177,Primary bile acid biosynthesis
+178,Prion diseases
+179,Progesterone-mediated oocyte maturation
+180,Prolactin signaling pathway
+181,Propanoate metabolism
+182,Prostate cancer
+183,Proteoglycans in cancer
+184,Proximal tubule bicarbonate reclamation
+185,Purine metabolism
+186,Pyrimidine metabolism
+187,Pyruvate metabolism
+188,Rap1 signaling pathway
+189,Ras signaling pathway
+190,Regulation of actin cytoskeleton
+191,Renal cell carcinoma
+192,Retinol metabolism
+193,Retrograde endocannabinoid signaling
+194,Rheumatoid arthritis
+195,Riboflavin metabolism
+196,RIG-I-like receptor signaling pathway
+197,Salivary secretion
+198,Salmonella infection
+199,Selenocompound metabolism
+200,Serotonergic synapse
+201,Shigellosis
+202,Signaling pathways regulating pluripotency of stem cells
+203,Small cell lung cancer
+204,Sphingolipid metabolism
+205,Sphingolipid signaling pathway
+206,Staphylococcus aureus infection
+207,Starch and sucrose metabolism
+208,Steroid biosynthesis
+209,Steroid hormone biosynthesis
+210,Sulfur metabolism
+211,Synaptic vesicle cycle
+212,Synthesis and degradation of ketone bodies
+213,Systemic lupus erythematosus
+214,Taste transduction
+215,Taurine and hypotaurine metabolism
+216,T cell receptor signaling pathway
+217,Terpenoid backbone biosynthesis
+218,TGF-beta signaling pathway
+219,Thiamine metabolism
+220,Thyroid cancer
+221,Thyroid hormone signaling pathway
+222,Thyroid hormone synthesis
+223,Tight junction
+224,TNF signaling pathway
+225,Toll-like receptor signaling pathway
+226,Toxoplasmosis
+227,Transcriptional misregulation in cancer
+228,Tryptophan metabolism
+229,Tuberculosis
+230,Type I diabetes mellitus
+231,Type II diabetes mellitus
+232,Tyrosine metabolism
+233,Ubiquinone and other terpenoid-quinone biosynthesis
+234,"Valine, leucine and isoleucine degradation"
+235,Vascular smooth muscle contraction
+236,Vasopressin-regulated water reabsorption
+237,VEGF signaling pathway
+238,Vibrio cholerae infection
+239,Viral carcinogenesis
+240,Viral myocarditis
+241,Vitamin B6 metabolism
+242,Vitamin digestion and absorption
+243,Wnt signaling pathway
