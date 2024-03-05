@@ -9,7 +9,6 @@ from util import *
 if __name__ == '__main__':
     args = parameter_parser()
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    herb_sim, target_sim, samples, pos_edges, neg_edges = load_data()
     metric_list = []
     metrics = np.zeros(7)
     x_ROC_list = []
@@ -27,8 +26,8 @@ if __name__ == '__main__':
         neg_edges_test_df = pd.read_csv(f'{fold_dir}/neg_edges_test.csv')
         neg_edges_test = neg_edges_test_df[['herb', 'target']].to_numpy().T
 
-        herb_sim = pd.read_csv(f'{fold_dir}/herb_sim.csv', index_col=False, dtype=np.float32).to_numpy()
-        target_sim = pd.read_csv(f'{fold_dir}/target_sim.csv', index_col=False, dtype=np.float32).to_numpy()
+        herb_sim = np.load(f'{fold_dir}/herb_sim.npz')['matrix']
+        target_sim = np.load(f'{fold_dir}/target_sim.npz')['matrix']
 
         '''Erase known relationships(test)'''
         n_herb = herb_sim.shape[0]
