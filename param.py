@@ -24,12 +24,12 @@ def parameter_parser():
     parser.add_argument("--herb_number",
                         type=int,
                         default=1497,
-                        help="Herb number. Default is 1016.")
+                        help="Herb number. Default is 1497.")
 
     parser.add_argument("--target_number",
                         type=int,
                         default=5219,
-                        help="Target number. Default is 1214.")
+                        help="Target number. Default is 5219.")
 
     parser.add_argument("--hidden_dim",
                         type=int,

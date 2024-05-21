@@ -50,7 +50,7 @@ class Model(nn.Module):
         # Dropout
         self.dropout = nn.Dropout(self.args.dropout)
 
-    def forward(self, het_net, het_x, herb_net, herb_x, target_net, target_x):
+    def forward(self, het_x, het_net, herb_net, herb_x, target_net, target_x):
         het_proj = self.proj_het(het_x)
         het_gcn1 = torch.relu(self.gcn_het_1(het_proj, het_net) + het_proj)
         het_gat = torch.relu(self.gat_het(het_gcn1, het_net) + het_gcn1)

@@ -10,9 +10,9 @@ from scipy.sparse import coo_matrix, csr_matrix
 
 def load_data():
     """加载数据集，获取同正样本相同数量的负样本"""
-    herb_sim = pd.read_csv("data/herb_herb_sim.csv", index_col=0, dtype=np.float32).to_numpy()
-    target_sim = pd.read_csv("data/target_target_sim.csv", index_col=0, dtype=np.float32).to_numpy()
-    herb_target_ass = pd.read_csv("data/adj.csv", index_col=0).to_numpy()
+    herb_sim = pd.read_csv("data/sim/herb_herb_sim.csv", index_col=0, dtype=np.float32).to_numpy()
+    target_sim = pd.read_csv("data/sim/target_target_sim.csv", index_col=0, dtype=np.float32).to_numpy()
+    herb_target_ass = pd.read_csv("data/adj/adj.csv", index_col=0).to_numpy()
     herb_sim = herb_sim - np.diag(np.diag(herb_sim))
     target_sim = target_sim - np.diag(np.diag(target_sim))
 
@@ -161,6 +161,35 @@ def calculate_loss(predict, pos_edge_idx, neg_edge_idx):
     return loss_fun(predict_scores, true_labels)
 
 
+def calculate_evaluation_metrics_group(predict, pos_edges, neg_edges, herb_h, herb_l, target_h, target_l):
+    """结果评估"""
+    pos_edges = pos_edges.astype(int)
+    neg_edges = neg_edges.astype(int)
+
+    results = {}
+    groups = ["HH", "HL", "LH", "LL"]
+    for group in groups:
+        if group == "HH":
+            pos_mask = np.isin(pos_edges[0], herb_h) & np.isin(pos_edges[1], target_h)
+            neg_mask = np.isin(neg_edges[0], herb_h) & np.isin(neg_edges[1], target_h)
+        elif group == "HL":
+            pos_mask = np.isin(pos_edges[0], herb_h) & np.isin(pos_edges[1], target_l)
+            neg_mask = np.isin(neg_edges[0], herb_h) & np.isin(neg_edges[1], target_l)
+        elif group == "LH":
+            pos_mask = np.isin(pos_edges[0], herb_l) & np.isin(pos_edges[1], target_h)
+            neg_mask = np.isin(neg_edges[0], herb_l) & np.isin(neg_edges[1], target_h)
+        else:  # "LL"
+            pos_mask = np.isin(pos_edges[0], herb_l) & np.isin(pos_edges[1], target_l)
+            neg_mask = np.isin(neg_edges[0], herb_l) & np.isin(neg_edges[1], target_l)
+        pos_predict_group = predict[pos_edges[0][pos_mask], pos_edges[1][pos_mask]]
+        neg_predict_group = predict[neg_edges[0][neg_mask], neg_edges[1][neg_mask]]
+        predict_labels_group = np.hstack((pos_predict_group, neg_predict_group))
+        true_labels_group = np.hstack((np.ones(pos_predict_group.shape[0]), np.zeros(neg_predict_group.shape[0])))
+        results[group] = get_metrics(true_labels_group, predict_labels_group)
+
+    return results
+
+
 def calculate_evaluation_metrics(predict, pos_edges, neg_edges):
     """结果评估"""
     pos_edges = pos_edges.astype(int)
@@ -217,9 +246,9 @@ def get_metrics(real_score, predict_score):
     accuracy_list = (TP + TN) / len(real_score.T)
     specificity_list = TN / (TN + FP)
 
-    plt.plot(x_ROC, y_ROC)
-    plt.plot(x_PR, y_PR)
-    plt.show()
+    # plt.plot(x_ROC, y_ROC)
+    # plt.plot(x_PR, y_PR)
+    # plt.show()
 
     max_index = np.argmax(f1_score_list)
     f1_score = f1_score_list[max_index]
