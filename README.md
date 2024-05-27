@@ -20,24 +20,19 @@ python main.py
 # Directory Structure Overview
 
 `main`   
-The main script used to start the entire process of training and testing the model.
+This file contains the main script used to start the entire process of training and testing the model.
 
 `model`   
-Includes the definition of the model and the code for its neural network architecture.
+This file includes the definition of the model and the codes for its neural network architecture.
 
 `param`  
-Parameter configuration.
+This file contains the parameter configuration.
 
 `util`  
-Contains a series of helper functions
+This file contains a series of helper functions.
 
 `fold_1` to `fold_5`  
-Stores experimental data. Each folder contains the similarity 
-matrices constructed by Gaussian kernel and cosine similarity 
-matrix for herb and target under the current independent 
-experiment (stored in `.npz` format), training sets of 
-positive and negative samples, and testing sets of 
-positive and negative samples.
+These folders store the experimental data. Each folder contains the similarity matrices constructed by Gaussian kernel and cosine similarity matrix for herb and target under the current independent experiment (stored with .npz format), training sets of positive and negative samples, and testing sets of positive and negative samples.
 
 `data`  
-Stores raw data and constructed data structures.
+This folder stores the raw data and constructed data structures.
